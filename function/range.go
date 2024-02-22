@@ -27,4 +27,8 @@ func range() {
 	for i, v := range pow {
 		fmt.Printf("2**%d = %d\n", i, v)
 	}
+	/**
+         for key := range oldMap
+         for key := range oldMap
+	/	
 }
