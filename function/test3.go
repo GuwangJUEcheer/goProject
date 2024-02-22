@@ -21,3 +21,6 @@ func split(sum int) (x, y int) {
 	y = sum - x
 	return
 }
+func getValue(pointer *int) int{
+	return *pointer
+}
