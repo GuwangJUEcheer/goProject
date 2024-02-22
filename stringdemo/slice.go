@@ -34,4 +34,12 @@ s = append(s, 7, 8, 9, 10, 11)
 fmt.Println(len(s)) // 输出: 11
 fmt.Println(cap(s)) // 输出: 12
 
+//nil的切片
+var numbers []int //default nil
+
+//substring
+numbers[:3] //just like arr
+
+//copy s3 to number
+copy(s3,number)
 
