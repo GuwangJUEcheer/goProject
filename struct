@@ -10,3 +10,9 @@ address string
 inf1 int //备用字段
 inf2 int //备用字段
 }
+
+//在golang里面如何引用有参构造和无参构造
+/*
+user1 := user_info(nil,"tani","male","09297393","sadaafaf","")
+user2 := user_info(userid:"",username:"",............)
+*/
