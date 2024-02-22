@@ -1,0 +1,12 @@
+package user
+type user_info struct{
+userid int
+username string
+sex string
+telephone string
+email string
+age int
+address string
+inf1 int //备用字段
+inf2 int //备用字段
+}
