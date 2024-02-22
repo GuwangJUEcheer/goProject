@@ -1,4 +1,5 @@
 package user
+import "fmt"
 type user_info struct{
 userid int
 username string
@@ -11,8 +12,20 @@ inf1 int //备用字段
 inf2 int //备用字段
 }
 
-//在golang里面如何引用有参构造和无参构造
-/*
-user1 := user_info{nil,"tani","male","09297393","sadaafaf",""}
-user2 := user_info{userid:"",username:"",............}
-*/
+type Books struct {
+    title   string
+    author  string
+    subject string
+    book_id int
+}
+
+func test() {
+    // 创建一个新的结构体
+    fmt.Println(Books{"Go 语言", "www.runoob.com", "Go 语言教程", 6495407})
+
+    // 也可以使用 key => value 格式
+    fmt.Println(Books{title: "Go 语言", author: "www.runoob.com", subject: "Go 语言教程", book_id: 6495407})
+
+    // 忽略的字段为 0 或 空
+    fmt.Println(Books{title: "Go 语言", author: "www.runoob.com"})
+}
