@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 )
-
+var g int
 func main() {
 	a,b := split(9)
 	fmt.Println(a, b)
