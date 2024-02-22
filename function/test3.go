@@ -7,6 +7,8 @@ import (
 func main() {
 	a,b := split(9)
 	fmt.Println(a, b)
+	var c string = "test"
+	fmt.Println(&c)
 }
 
 /*
