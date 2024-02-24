@@ -1,11 +1,11 @@
-package main
+package learnSlice
 
 import (
 	"fmt"
 	"unsafe"
 )
 
-func main() {
+func Test() {
 
 	/*
 		关于char
