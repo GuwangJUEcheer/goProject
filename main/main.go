@@ -36,4 +36,5 @@ func main() {
 		return a1 + a2
 	}(15, 25)
 	fmt.Printf("res1 = %d\n", res1)
+	fmt.Printf("res2 = %d\n", utils.Fun1(3, 9))
 }
