@@ -31,4 +31,9 @@ func init() {
 func main() {
 	learnSlice.ShowSlice()
 	learnSlice.Test()
+	//匿名函数 没有名字的函数就是匿名函数 一般只使用一次
+	res1 := func(a1, a2 int) int {
+		return a1 + a2
+	}(15, 25)
+	fmt.Printf("res1 = %d\n", res1)
 }
