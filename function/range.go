@@ -4,7 +4,7 @@ import "fmt"
 
 var pow = []int{1, 2, 4, 8, 16, 32, 64, 128}
 
-func rangeArray() {
+func RangeArray() {
 
 	// 定义一个 map，键为字符串，值为整数
 	oldMap := map[string]int{

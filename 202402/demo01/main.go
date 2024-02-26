@@ -11,4 +11,6 @@ func main() {
 	fmt.Println("Hello,World")
 	utils.Test()
 	utils.TestTime()
+	utils.TimeSleep()
+	utils.UseUnix()
 }

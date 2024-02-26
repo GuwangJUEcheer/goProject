@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func arryaDisplay() {
+func ArryaDisplay() {
 	var arr [5]int
 
 	for i := 0; i < len(arr); i++ {
@@ -28,4 +28,24 @@ func arryaDisplay() {
 	// 通过切片修改原始数组
 	slice[0] = "tani"
 	fmt.Println("修改后的原始数组:", anotherOne)
+}
+
+func GetArrayAddress() {
+
+	var intArr [3]int
+
+	// %p可以打印地址 数组地址直接指针即可 数组元素地址最快 int占8 而且连续
+	fmt.Printf("%p,%p,%p", &intArr[0], &intArr[1], &intArr[2])
+}
+
+func PrintArr() {
+
+	num3 := [...]int{1, 2, 3, 4, 5}
+	fmt.Println(num3)
+
+	num4 := [...]string{2: "tom", 0: "jack", 1: "Mick"}
+	for i, v := range num4 {
+
+		fmt.Printf("i=%v , value=%v ", i, v)
+	}
 }

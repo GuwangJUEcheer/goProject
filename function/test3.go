@@ -4,10 +4,8 @@ import (
 	"fmt"
 )
 
-var g int
-
-func test3() {
-	a, b := split(9)
+func Test3() {
+	a, b := Split(9)
 	fmt.Println(a, b)
 	var c string = "test"
 	fmt.Println(&c)
@@ -18,11 +16,11 @@ func test3() {
 		return y, x
 	}
 */
-func split(sum int) (x, y int) {
+func Split(sum int) (x, y int) {
 	x = sum * 4 / 9
 	y = sum - x
 	return
 }
-func getValue(pointer *int) int {
+func GetValue(pointer *int) int {
 	return *pointer
 }
