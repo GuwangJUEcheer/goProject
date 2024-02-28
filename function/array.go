@@ -49,3 +49,7 @@ func PrintArr() {
 		fmt.Printf("i=%v , value=%v ", i, v)
 	}
 }
+
+/*DoubleArray 二维数组*/
+var Arr [4][6]int
+var Arr3 = [2][3]int{{1, 2, 3}, {4, 5, 6}}

@@ -90,3 +90,10 @@ func BytesToString(bytes []byte) string {
 }
 
 //formatInt(2) 转为二进制
+
+// 修改string
+func ReviseString(str string) string {
+	bytes := []byte(str) //或者转化为[]rune也可以
+	bytes[0] = 'a'
+	return string(bytes)
+}
