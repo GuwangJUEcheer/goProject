@@ -61,4 +61,10 @@ func TestStruct() {
 	} else {
 		fmt.Println(string(jsonstr)) //这里要转换的
 	}
+
+	stud3.TestStudent() //给结构体绑定方法
+}
+func (s Student) TestStudent() {
+
+	println("test")
 }
