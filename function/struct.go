@@ -8,13 +8,34 @@ import (
 type Student struct {
 	name string
 	sex  string
-	age  int32
+	age  int
 }
 
 type StudentO struct {
 	Name string `json:"name"`
 	Sex  string `json:"sex"`
 	Age  int32  `json:"age"`
+}
+
+// 小写字母开头的结构体实例化使用工厂模式
+type person struct {
+	name string
+	sex  string
+	age  int
+}
+
+func NewPerson(name string, sex string, age int) *person {
+
+	return &person{
+		name,
+		sex,
+		age,
+	}
+}
+
+func (p *person) GetName() string {
+
+	return p.name
 }
 
 func TestStruct() {
@@ -63,6 +84,13 @@ func TestStruct() {
 	}
 
 	stud3.TestStudent() //给结构体绑定方法
+	// 方法和函数区别 当参数是函数指针时候函数必须传地址 但是方法可以传类型
+	//比如上面的 TestStudent
+	(&stud3).TestStudent() //两个方法执行结果完全一致 因为执行是值拷贝
+
+	var stud7 = &Student{"aa", "male", 20}
+	fmt.Printf("%v", stud7)
+
 }
 func (s Student) TestStudent() {
 
